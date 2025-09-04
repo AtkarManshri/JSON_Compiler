@@ -59,14 +59,19 @@ This project is a **JSON Compliler** consisting of a backend developed using **S
 
 ## The frontend should now be running on http://localhost:3001
 
-## Project Structure
+## Technology Stack
 
-RuleEngineBackend/ # Spring Boot backend
-├─ src/
-├─ mvnw
-└─ pom.xml
+- **Backend:** Spring Boot, Java 17  
+- **Frontend:** ReactJS, Vite  
+- **Database:** MongoDB Atlas  
+- **Containerization (optional):** Docker  
 
-RuleEngineFrontEnd/ # ReactJS frontend
-├─ src/
-├─ package.json
-└─ .env
+---
+
+## Key Highlights
+
+- Lightweight SQL-like compiler for JSON datasets  
+- Efficient query and validation engine  
+- Modern ReactJS interface  
+- No local database installation required  
+- Docker support for easy deployment
