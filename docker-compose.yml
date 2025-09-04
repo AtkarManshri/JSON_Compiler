@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./RuleEngineBackend
+    ports:
+      - "8080:8080"
+  
+  frontend:
+    build:
+      context: ./RuleEngineFrontEnd
+    ports:
+      - "5173:3000"  # Map host port 3000 to container port 80
+    environment:
+      - VITE_BACKEND_URL=http://backend:8080 # Vite-specific environment variable
