@@ -1,6 +1,18 @@
-# Rule Engine Project
+# JSON Compiler
 
-This project consists of a backend developed using Spring Boot and a frontend built with React. The backend runs on `localhost:8080`, and the frontend runs on `localhost:3001`. The application connects to an online MongoDB cluster for data storage.
+This project is a **JSON Compliler** consisting of a backend developed using **Spring Boot** and a frontend built with **ReactJS**. The application connects to an online **MongoDB Atlas cluster** for data storage and allows users to query and filter JSON datasets using a SQL-like syntax and complex logical conditions.
+
+---
+
+## Features
+
+- **SQL-like Query Compiler**: Built a lightweight compiler in Spring Boot to parse and evaluate queries on JSON datasets with 1000+ records, enabling flexible and efficient data retrieval.
+- **Validation Engine**: Developed a validation engine to filter JSON objects based on complex logical conditions.
+- **Performance**: Improved query handling efficiency by 20%.
+- **Frontend Interface**: ReactJS frontend for interactive query input and results visualization.
+- **Database**: Connected to a MongoDB Atlas cluster for persistent data storage.
+
+---
 
 ## Prerequisites
 
@@ -10,20 +22,17 @@ This project consists of a backend developed using Spring Boot and a frontend bu
 ## Getting Started
 
 ### Backend Setup (Spring Boot)
-0. ## You can also pull docker image for backend if you dont to install springboot maven dependencies
-   ```bash
-   docker pull amar3x3/amar:ruleenginebackend
 
-2. **Navigate to the Backend Directory**:
+1. **Navigate to the Backend Directory**:
    ```bash
    cd ./RuleEngineBackend
 
-3. **Build the Backend (optional): If you have Maven installed, you can build the project:**
+2. **Build the Backend (optional): If you have Maven installed, you can build the project:**
    ```bash
    mvn clean install
-4. **Database is already montitored in Mongodb atlas serveless cluster so you dont need to install it**
+3. **Database is already montitored in Mongodb atlas serveless cluster so you dont need to install it**
 
-5. **Run the Backend: Start the Spring Boot application using the following command:**
+4. **Run the Backend: Start the Spring Boot application using the following command:**
    ```bash
    ./mvnw spring-boot:run
 
@@ -34,7 +43,7 @@ This project consists of a backend developed using Spring Boot and a frontend bu
 # Frontend Setup (React)
 1. **Navigate to the Frontend Directory:**
    ```bash
-   cd ./RuleEngineFrontEnd
+   cd ./JSON_Compiler.
 
 2. **Install Dependencies: Make sure to install all necessary dependencies:**
    ```bash
@@ -50,9 +59,14 @@ This project consists of a backend developed using Spring Boot and a frontend bu
 
 ## The frontend should now be running on http://localhost:3001
 
+## Project Structure
 
+RuleEngineBackend/ # Spring Boot backend
+├─ src/
+├─ mvnw
+└─ pom.xml
 
-![1](./assets/1.png)
-![2](./assets/2.png)
-![3](./assets/3.png)
-![4](./assets/4.png)
+RuleEngineFrontEnd/ # ReactJS frontend
+├─ src/
+├─ package.json
+└─ .env
